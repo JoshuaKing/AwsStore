@@ -1,0 +1,56 @@
+{
+  "items": [
+    {
+      "asin": "B0166Q4S40",
+      "category": "electronics",
+      "type": "timed",
+      "link": "https://www.amazon.com/Upgraded-Poweradd-Portable-External-Lightning/dp/B0166Q4S40/ref=gbps_img_s-3_bb19_b016ee47?smid=AVWEWK27WU24S&pf_rd_p=41fd713f-6bfe-4299-a021-d2b94872bb19&pf_rd_s=slot-3&pf_rd_t=701&pf_rd_i=gb_main&pf_rd_m=ATVPDKIKX0DER&pf_rd_r=9FYARE8GAN1FMHPJ3HSW",
+      "name": {
+        "original": "[Upgraded] Poweradd 2nd Gen 3.4A Pilot 2GS 10,000mAh Power Bank Portable Charger External Battery with Fast Charge for iPhone, Samsung Galaxy Note and More (1M Lightning Cable Included)",
+        "simple": "Portable Phone Battery Charger"
+      },
+      "images": {
+        "profile": "https://images-na.ssl-images-amazon.com/images/I/61XfYqUXFAL._SL1200_.jpg"
+      },
+      "price": {
+        "original": 49.99,
+        "sale": 16.99,
+        "saleend": "2017-03-25T17:00+10:00"
+      }
+    },
+    {
+      "asin": "B01D8KOAWM",
+      "category": "electronics",
+      "type": "discount",
+      "link": "https://www.amazon.com/AUKEY-iPhone-Samsung-Android-Smartphones/dp/B01D8KOAWM/ref=gbps_img_s-3_bb19_50ed9883?smid=A142BGUZC6UH73&pf_rd_p=41fd713f-6bfe-4299-a021-d2b94872bb19&pf_rd_s=slot-3&pf_rd_t=701&pf_rd_i=gb_main&pf_rd_m=ATVPDKIKX0DER&pf_rd_r=BD4JC4HCPHXKRFBXA8GJ",
+      "name": {
+        "original": "AUKEY Ora iPhone Lens, 0.45x 140° Wide Angle + 10x Macro Clip-on Cell Phone Camera Lenses Kit for Samsung, Android Smartphones, iPhone",
+        "simple": "Wide-Angle Phone Lens"
+      },
+      "images": {
+        "profile": "https://images-na.ssl-images-amazon.com/images/I/71i0tKG8AxL._SL1500_.jpg"
+      },
+      "price": {
+        "original": 39.99,
+        "sale": 21.99
+      }
+    },
+    {
+      "asin": "B019Q6F9F4",
+      "category": "electronics",
+      "type": "discount",
+      "link": "https://www.amazon.com/Anker-PowerLine-Premium-Motorola-Smartphones/dp/B019Q6F9F4/ref=gbps_img_s-3_bb19_e9a22010?smid=A294P4X9EWVXLJ&pf_rd_p=41fd713f-6bfe-4299-a021-d2b94872bb19&pf_rd_s=slot-3&pf_rd_t=701&pf_rd_i=gb_main&pf_rd_m=ATVPDKIKX0DER&pf_rd_r=BD4JC4HCPHXKRFBXA8GJ",
+      "name": {
+        "original": "TP-Link AC1200 Gigabit Wireless Wi-Fi Router (Archer C1200)",
+        "simple": "Android/Micro USB Charging Cable"
+      },
+      "images": {
+        "profile": "https://images-na.ssl-images-amazon.com/images/I/51NOpIOKj%2BL.jpg"
+      },
+      "price": {
+        "original": 94.99,
+        "sale": 59.99
+      }
+    }
+  ]
+}

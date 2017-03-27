@@ -1,0 +1,15 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel="stylesheet" href="/stylesheets/foundation/foundation.css")
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js")
+    script(src="/javascripts/foundation/vendor/foundation.js")
+    script(src="/javascripts/store.js")
+    <!--script(src="https://www.google.com/recaptcha/api.js")-->
+    link(rel='icon', href='/images/favicon.ico')
+  body
+    block header
+    block content
+    block footer

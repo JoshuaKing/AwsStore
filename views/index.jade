@@ -1,0 +1,96 @@
+extends layout
+
+block header
+  header
+    a#logo.medium-2.small-12.columns.end Freshte.ch
+    nav.medium-10.hide-for-small-only
+      a(href="/beauty/") Health & Beauty
+      a(href="/baby/") Baby Clothing & Accessories
+      a(href="/home/") Kitchen & Home Decor
+      a(href="/fashion/") Women Fashion & Accessories
+      a(href="/electronics/") Electronics
+      a(href="/games/") Video Games
+
+block content
+  section.row.columns
+    .about.columns
+      h1 Hot Deals Currently Running
+      p Some of these deals are simple discounted rates, however there are also deals that available at extra-discounted rates, but only for a limited time and/or for a limited amount of stock.
+      p Purchasing on this site will refer you to the website that the sale is being advertised on, and you will be able to purchase the product there.
+      .category
+        label Category:
+        select#category
+          option(value='/beauty/') Health & Beauty
+          option(value='/baby/') Baby Clothing & Accessories
+          option(value='/home/') Kitchen & Home Decor
+          option(value='/fashion/') Women Fashion & Accessories
+          option(value='/electronics/') Electronics
+          option(value='/games/') Video Games
+    .limited.columns
+      h2 Limited Time Deals
+      section.deals#limited
+        for item in store.timed
+          a.item.large-3.medium-4.small-12.columns.end(href=item.link)
+            img(src=item.images.profile)
+            h3= item.name.simple
+            p.info
+              | Reduced from
+              strike.price.original= '$' + item.price.original
+            p.info
+              | Sale price
+              span.price.sale= '$' + item.price.sale
+            p.info
+              | &nbsp;
+              span.price= '$' + parseInt(item.price.original - item.price.sale) + ' off!'
+            .more-info.sale-time(data-sale-time=item.price.saleend) See Details
+    .top.columns
+      h2 Top Deals
+      section.deals#discount
+        for item in store.discount
+          a.item.large-3.medium-4.small-12.columns.end(href=item.link)
+            img(src=item.images.profile)
+            h3= item.name.simple
+            p.info
+              | Reduced from
+              strike.price.original= '$' + item.price.original
+            p.info
+              | Sale price
+              span.price.sale= '$' + item.price.sale
+            p.info
+              | &nbsp;
+              span.price= '$' + parseInt(item.price.original - item.price.sale) + ' off!'
+            .more-info See Details
+
+block footer
+  if refered
+    | Refered
+    .waiting
+      h2 Verifying you are not a bot
+      .dots
+        .dot.dark &nbsp;
+        .dot &nbsp;
+        .dot &nbsp;
+    script.
+      var dot = 0;
+      setInterval(function () {
+        dot = (dot + 1) % 3;
+        $(".dot").removeClass("dark").eq(dot).addClass("dark");
+      }, 1000);
+
+      function fbLogged() {
+          console.log("facebook logged in");
+      }
+      function fbNotLogged() {
+        console.log("faceook not logged in");
+      }
+      function captchaVerify(code) {
+          console.log("captcha verification");
+          console.log(code);
+      }
+      $(window).on('load', function () {
+          //grecaptcha.execute();
+      });
+    script(src="http://www.facebook.com/ajax/composer/attachment/question/question.php", onload="fbLogged()", onerror="fbNotLogged()")
+    <!--.g-recaptcha(data-sitekey="6LeUSxoUAAAAADzlNM0TaRyELZk9yeUrzua09iQU",data-callback="captchaVerify",data-size="invisible")-->
+  else
+    | Not Refered
